@@ -1,0 +1,65 @@
+/* ===== CSS Variables ===== */
+:root {
+    --color-primary: #3C2E25;
+    --color-primary-light: #967763;
+    --color-secondary: #3B2E25;
+    --color-bg-light: #F7F6F9;
+    --color-bg-white: #FFFFFF;
+    --color-text-dark: #3B2E25;
+    --color-text-muted: rgba(0, 0, 0, 0.70);
+    --color-text-light: #737373;
+    --color-accent: #E2EFF2;
+    --color-brown: #967763;
+
+    --font-primary: 'Manrope', sans-serif;
+    --font-secondary: 'Arimo', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --container-width: 1200px;
+    --section-padding: 80px 0;
+}
+
+/* ===== Reset & Base Styles ===== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background: var(--color-bg-white);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
