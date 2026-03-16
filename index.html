@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="Icons/SpecD Logo 3.svg" alt="SpecD Logo">
+                    <img src="Icons/SpecD Logo 4.svg" alt="SpecD Logo">
                     <span class="logo-text">Specific Designs</span>
                 </div>
                 <nav class="main-nav">
@@ -45,10 +46,16 @@
                         <span>ENG</span>
                     </div>
                     <a href="#contact" class="nav-cta">CONTACT US</a>
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -57,6 +64,77 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-main">
+            <div class="hero-popup1">
+                <img src="Assets/projectImage5.png" class="popup-img" alt="popup-img">
+                <button class="popup-close-btn">X</button>
+            </div>
+            <div class="hero-popup2">
+                <div class="project-popup">
+                    <div class="popup-header">
+                        <h2>Start Your Project</h2>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <p class="popup-description">
+                        Tell us a bit about your project and we'll get back to you.
+                    </p>
+
+                    <form class="popup-form">
+
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name">
+
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="Enter your Mobile Number">
+
+                        <label>Business Name <span class="optional">(Optional)</span></label>
+                        <input type="text" placeholder="Enter your Business name">
+
+                        <label>Project Type</label>
+
+                        <div class="project-types">
+                            <button type="button" class="type active">
+                                <img src="Icons/Home.png"> Luxury Home
+                            </button>
+
+                            <button type="button" class="type">
+                                <img src="Icons/Institutional.png"> Institutional Buildings
+                            </button>
+
+                            <button type="button" class="type">
+                                <img src="Icons/Corporate.png"> Corporate Buildings
+                            </button>
+
+                            <button type="button" class="type">
+                                <img src="Icons/Other.png"> Other
+                            </button>
+                        </div>
+
+                        <div class="budget-label">
+                            <span>Project Budget</span>
+                            <span class="budget-value">
+                                <img src="Icons/Wallet.png" class="wallet-icon"> ₹2 Cr
+                            </span>
+                        </div>
+
+                        <input type="range" min="2" max="50" value="2" class="range-slider">
+
+                        <div class="budget-footer">
+                            <span>₹2 Cr</span>
+                            <span>₹50 Cr</span>
+                        </div>
+
+                        <button class="callback-btn">Get a Callback</button>
+
+                        <div class="popup-footer">
+                            <img src="Icons/Info.png" class="info-icon">
+                            We handle premium projects from ₹2 Cr onwards. Your details stay private.
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
             <div class="hero-content">
                 <div class="hero-left">
                     <h1 class="hero-title">
@@ -455,7 +533,7 @@
                         </div>
                     </div>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">Start Your Project</a>
+                        <button class="btn btn-primary project-start-btn">Start Your Project</button>
                         <a href="#projects" class="btn btn-link">View Our Work <span class="arrow">↗</span></a>
                     </div>
                 </div>
@@ -675,6 +753,17 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const header = document.querySelector('.header');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                header.classList.toggle('nav-active');
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,55 @@
+/* Responsive Styles for Blogs Page */
+@media (max-width: 1400px) {
+    .hero {
+        margin-inline: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        margin-inline: 80px;
+    }
+    .hero-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        margin-inline: 40px;
+    }
+    .hero-head-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-inline: 20px;
+    }
+    .hero-main {
+        grid-template-columns: 1fr;
+    }
+    .hero-head-title {
+        font-size: 32px;
+    }
+    .blog-img {
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-inline: 10px;
+    }
+    .hero-head-title {
+        font-size: 28px;
+    }
+    .blog-img {
+        max-height: 250px;
+    }
+}
