@@ -1,0 +1,108 @@
+/* Responsive Styles for Project Page */
+@media (max-width: 1400px) {
+    .hero {
+        margin-inline: 100px;
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-left {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-right-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-gallery-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .gallery-image {
+        width: calc(50% - 20px);
+    }
+    .project-gallery-content {
+        grid-template-columns: 1fr;
+    }
+    .gallery-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        margin-inline: 50px;
+        padding-inline: 40px;
+    }
+    .project-img {
+        height: 500px;
+    }
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-inline: 20px;
+        padding-inline: 20px;
+    }
+    .hero-head-title {
+        font-size: 32px;
+    }
+    .project-img {
+        height: 400px;
+    }
+    .gallery-image {
+        width: 100%;
+    }
+    .project-user-header {
+        font-size: 24px;
+        text-align: center;
+    }
+    .project-user-body {
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-inline: 10px;
+        padding-inline: 15px;
+    }
+    .hero-head-title {
+        font-size: 26px;
+    }
+    .hero-left {
+        font-size: 18px;
+    }
+    .project-img {
+        height: 250px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-left {
+        margin-bottom: 10px;
+    }
+    .project-gallery-head {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
